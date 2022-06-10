@@ -12,7 +12,7 @@
                 echo 'Ви вгадали з '. $_SESSION['try'] . ' спроби';
             }
         }else{
-                $_SESSION['try'];
+                $_SESSION['try']++;
             echo 'Ви не вгадали спробуйте ще';
         }
         exit();        
