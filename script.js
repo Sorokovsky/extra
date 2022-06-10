@@ -5,5 +5,5 @@ select.onchange = async() => {
     const response = await fetch(`./index.php?num=${number}`, {method: "GET"});
     const data = await response.text();
     output.innerText = data;
-    select.children[number - 1].disabled = false;
+    select.children[number - 1].disabled = true;
 };
