@@ -1,5 +1,6 @@
+const a = document.querySelector('a');
 const select = document.querySelector('.select');
-select.onchange = async() => {
+a.onchange = async() => {
     const number = Number(select.value);
     const output = document.querySelector('p');
     const response = await fetch(`./index.php?num=${number}`, {method: "GET"});
