@@ -27,6 +27,7 @@
     <title>Extra</title>
 </head>
 <body>
+        <p>Вгадайте число</p>
         <select class='select' name="extra">
         <?php
             $_SESSION['random'] = rand(1, 10);
